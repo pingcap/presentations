@@ -1,4 +1,4 @@
-## TiDB Community Presentations
+# TiDB Community Presentations
 
 「如果你有正确的态度，有趣的事情自然会找到你。」我们相信对技术的追求和对开源的热爱把你带到了这里。
 
