@@ -4,6 +4,8 @@ Paper reading 是 PingCAP 的线上活动之一。在这里我们会带领大家
 
 Paper reading 固定直播链接：https://pingcap.zoom.us/j/8167688561
 
+Paper reading [日历](https://calendar.google.com/calendar/embed?src=community%40pingcap.com&ctz=Asia%2FShanghai)
+
 查看 [往期视频](https://space.bilibili.com/86485707/channel/detail?cid=65348)。 
 
 | **Date**     | **Speaker**                                                                                    | **Previous Videos**|
