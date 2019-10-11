@@ -26,7 +26,7 @@ TiDB 的协议兼容 MySQL，具体 MySQL 的协议细节可以参考 [MySQL Pro
 
 ### SQL Parser
 
-TiDB 的 Parser 分为两块，第一部分是 Lexer，是用 Golang 手动写的；第二部分是 Parser，用 goyacc 实现。Parser 实现阅读这篇文章：[TiDB 源码阅读系列文章（五）TiDB SQL Parser 的实现](https://pingcap.com/blog-cn/tidb-source-code-reading-5/)，如果想要深入理解 yacc 的语法，推荐阅读 [《flex & bison》](https://e.jd.com/30323162.html)。
+TiDB 的 Parser 分为两块，第一部分是 Lexer，是用 Golang 手动写的；第二部分是 Parser，用 goyacc 实现。Parser 实现阅读这篇文章：[TiDB 源码阅读系列文章（五）TiDB SQL Parser 的实现](https://pingcap.com/blog-cn/tidb-source-code-reading-5/)，如果想要深入理解 yacc 的语法，推荐阅读 [《flex & bison》](https://book.douban.com/subject/3568327/)。
 
 ### Schema 管理 & DDL
 
