@@ -132,7 +132,7 @@ Coprocessor 负责处理 TiDB 下推的部分算子，在更靠近数据的地�
 
 ## Placement Driver (PD) 
 
-PD 在集群中的地位是一个逻辑上的单点，类似于很多系统中都有的 master server 或者 meta server 之类的组件。PD 的内部结构是多种不同功能的复合体，功能简介可以参考 slide [介绍 PD](https://docs.google.com/presentation/d/1NxVemycWYriMkim7hYykgdRw1yRPulv_6Bm6xOgvc9s)，还有基于源码的介绍 [TiKV 源码解析系列 - Placement Driver](https://pingcap.com/blog-cn/placement-driver/) 和 [TiKV 源码浅析 - PD Scheduler](https://pingcap.com/blog-cn/pd-scheduler/)。
+PD 在集群中的地位是一个逻辑上的单点，类似于很多系统中都有的 master server 或者 meta server 之类的组件。PD 的内部结构是多种不同功能的复合体，功能简介可以参考 [《PD 调度策略最佳实践》](https://pingcap.com/blog-cn/best-practice-pd/) 这篇文章，还有基于源码的介绍 [TiKV 源码解析系列 - Placement Driver](https://pingcap.com/blog-cn/placement-driver/) 和 [TiKV 源码浅析 - PD Scheduler](https://pingcap.com/blog-cn/pd-scheduler/)。
 
 ### embed etcd
 
