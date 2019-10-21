@@ -100,7 +100,7 @@ TiDB 侧的事务逻辑可以参考 [TiDB 源码阅读系列文章（十九）ti
 
 ## TiKV
 
-这里有一个深入介绍 TiKV 原理的系列文章：[Deep Dive Into TiKV](https://tikv.github.io/deep-dive-tikv/overview/introduction.html)
+这里有一个深入介绍 TiKV 原理的系列文章：[Deep Dive Into TiKV](https://tikv.org/docs/deep-dive/introduction/)
 
 这里有一个 [TiKV 源码解析系列文章](https://pingcap.com/blog-cn/#TiKV-%E6%BA%90%E7%A0%81%E8%A7%A3%E6%9E%90)
 
