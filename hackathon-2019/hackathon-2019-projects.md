@@ -2,7 +2,7 @@
 ## TiDB Hackathon 2019 完整参赛项目展示
 
 | 序号 | 团队名称 | 项目名称 | 项目简介 | GitHub Repo |
-|:----|:-----|:--------|:-----------------------------|:-----------------|
+|:--|:-----|:--------|:-----------------------------|:------------|
 | 1 | 攀登者 | SQLAdvisor | 对 SQL 提供合适的索引优化建议。 | [https://github.com/longxuegang/SQLAdvisor-TiDB.git](https://github.com/longxuegang/SQLAdvisor-TiDB.git) |
 | 2 | IPZZ（CTO 特别奖） | TiSearch | Fulltext Search with SQL. | http://github.com/redis-force/parser http://github.com/redis-force/tidb http://github.com/redis-force/tisearch  http://github.com/redis-force/tisearch-fe |
 | 3 | 朴实无华且枯燥 | 在线更改集群配置 | 做了一点微小的工作。 | [https://github.com/plainboring](https://github.com/plainboring) |
@@ -24,8 +24,7 @@
 | 19 | Juicy | TIFS | TiFS 数基于 TiKV 和 juicefs 实现的共享 posix 文件系统，为 tiflash 提供持久化的共享存储，以便接下来实现弹性的 Hatp 架构。 | - |
 | 20 | 鸽子汤 | 基于 TiKV 的文件系统 | A block device in user space for Linux in Golang. | [https://github.com/jjyr/buse-go](https://github.com/jjyr/buse-go)  |
 | 21 | TQL | TiLighting | {fast, correct}- chose two | [https://github.com/zhexuany/TiLightning](https://github.com/zhexuany/TiLightning)  |
-| 22 | 东北二人转...... | etcd on tikv | Terraform 是目前最流行的云上资源编排工具，用于管理云上基础设施。我们扩展了 terraform 的功能，支持 tikv as a state backend，使 tikv 成为继 etcd，consul 之外的第三种通用型 kv 状态存储，不用再引入额外的组件。
-结合 tidb-operator，可以在大多数云厂商上提供 all in TiDB Stack 的能力。 | [https://github.com/cloud-insight/terraform](https://github.com/cloud-insight/terraform) |
+| 22 | 东北二人转...... | etcd on tikv | Terraform 是目前最流行的云上资源编排工具，用于管理云上基础设施。我们扩展了 terraform 的功能，支持 tikv as a state backend，使 tikv 成为继 etcd，consul 之外的第三种通用型 kv 状态存储，不用再引入额外的组件。结合 tidb-operator，可以在大多数云厂商上提供 all in TiDB Stack 的能力。 | [https://github.com/cloud-insight/terraform](https://github.com/cloud-insight/terraform) |
 | 23 | ti-cool（二等奖） | tidb-wasm | 将 TiDB 运行在你的浏览器里。 | [https://github.com/lucklove/tidb-wasm](https://github.com/lucklove/tidb-wasm) |
 | 24 | 老鸽，稳 | 钛合金， TiDB 扩展方案 | Ti-alloy 基于了 tidb-plugin-framewok。为 TiDB 增加大量用户定制化的功能扩展方案。当前版本已完成和 MySQL 接口相似的 UDF 定义，轻松为 TiDB 添加 UDF。FDW (Foreign Data Wrapper) 原型完成 ，支持读/写操作。参考 Prometheus 的发展经历，实现了 Scan 和 SelectionScan 两种 Scan 接口相应功能已经添加测试。 | [https://github.com/WPH95/tidb/commits/hackathon-2019](https://github.com/WPH95/tidb/commits/hackathon-2019) |
 | 25 | exciting（三等奖） | TiExciting | TiExciting 为 TiDB 集群提供图形化部署及运维， 尽可能做到易用、友好、高效。 | https://github.com/breeswish/TiExciting  https://github.com/breeswish/TiExcitingUI |
