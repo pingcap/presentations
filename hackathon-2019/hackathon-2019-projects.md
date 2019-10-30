@@ -4,14 +4,14 @@
 | 序号 | 团队名称 | 项目名称 | 项目简介 | GitHub Repo |
 |:--|:-----|:--------|:-----------------------------|:------------|
 | 1 | 攀登者 | SQLAdvisor | 对 SQL 提供合适的索引优化建议。 | [https://github.com/longxuegang/SQLAdvisor-TiDB.git](https://github.com/longxuegang/SQLAdvisor-TiDB.git) |
-| 2 | IPZZ（CTO 特别奖） | TiSearch | Fulltext Search with SQL. | http://github.com/redis-force/parser http://github.com/redis-force/tidb http://github.com/redis-force/tisearch  http://github.com/redis-force/tisearch-fe |
+| 2 | IPZZ（CTO 特别奖） | TiSearch | Fulltext Search with SQL. | https://github.com/redis-force/parser   https://github.com/redis-force/tidb https://github.com/redis-force/tisearch    https://github.com/redis-force/tisearch-fe |
 | 3 | 朴实无华且枯燥 | 在线更改集群配置 | 做了一点微小的工作。 | [https://github.com/plainboring](https://github.com/plainboring) |
 | 4 | 强特征与浅规则 | TiNet | AI 结合弹性热数据。 | [https://github.com/nolouch/TiNet](https://github.com/nolouch/TiNet) |
 | 5 | sut-birds | TiM | TiM - TiDB 多集群运维工具，解决 TiDB 多集群运维以及升级操作复杂易出错等问题, 提高 TiDB 运维人员的效率。 | [https://github.com/tidbops/tim](https://github.com/tidbops/tim) |
 | 6 | 柠檬围绕着我 | unistore 中的冷热数据分离 | 使用 S3 存储冷数据并提供读取。 | [https://github.com/bobotu/badger/tree/hackathon](https://github.com/bobotu/badger/tree/hackathon) |
 | 7 | TiNewbee | TiKV cluster on Kubernetes | K8s 上实现去中心化 TiKV 集群。 | [https://github.com/tennix/pd/tree/hackathon](https://github.com/tennix/pd/tree/hackathon) |
-| 8 | DIstributedIO | 基于 Spanner 的事务模型实现 | 在 TiKV 中实现 Spanner 论文中的事务模型，从模型上成倍的优化了分布式事务的性能。 | [http://github.com/distributedio/tikv, spanner 分支](http://github.com/distributedio/tikv) |
-| 9 | .*（二等奖） | TiDB 跨数据中心的解决方案 | 我们为 TiDB 引入了 DC 的概念，并实现了跨数据中心的 follower replication 与读写优化。 | https://github.com/TennyZhuang/tidb  https://github.com/TennyZhuang/tikv  https://github.com/TennyZhuang/pd  https://github.com/TennyZhuang/kvproto |
+| 8 | DIstributedIO | 基于 Spanner 的事务模型实现 | 在 TiKV 中实现 Spanner 论文中的事务模型，从模型上成倍的优化了分布式事务的性能。 | [https://github.com/distributedio/tikv, spanner 分支](http://github.com/distributedio/tikv) |
+| 9 | .*（二等奖） | TiDB 跨数据中心的解决方案 | 我们为 TiDB 引入了 DC 的概念，并实现了跨数据中心的 follower replication 与读写优化。 | https://github.com/TennyZhuang/tidb    https://github.com/TennyZhuang/tikv    https://github.com/TennyZhuang/pd    https://github.com/TennyZhuang/kvproto |
 | 10 | 代码有毒 | SQL 过滤与优化中间件 | 旨在解决用户的SQL 质量参差不齐，迁移和使用过程中，引发集群资源紧的问题。 | [https://github.com/guzhenping/Code-with-poison](https://github.com/guzhenping/Code-with-poison) |
 | 11 | ZZZZ | Quotas in TiDB | 基于集群资源配额的多租户隔离实现。 | [https://github.com/baiyuqing](https://github.com/baiyuqing) |
 | 12 | 鹰眼小队 | TiDBSlowSQL | A Real time , High performance, Multi-dimension Slow Query Analysis System for TiDB. | [https://github.com/ruiaylin/tidbslowsql](https://github.com/ruiaylin/tidbslowsql) |
