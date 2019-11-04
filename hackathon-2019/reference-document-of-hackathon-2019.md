@@ -1,4 +1,4 @@
-# Hackathon TiDB/TiKV 参考文档资料汇总
+# TiDB/TiKV 参考文档资料汇总
 
 ## 前序阅读
 
