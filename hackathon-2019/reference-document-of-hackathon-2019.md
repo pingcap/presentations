@@ -118,9 +118,9 @@ TiKV 内部可分为多层，每层有各自的功能，按从底向上排列：
 
 *   Coprocessor
 
-RocksDB 是一个单机存储引擎，存放 TiKV 所有数据，提供单机存储的 KV API。[详情参见](https://docs.google.com/document/d/1pnmuX8LNRMyYCIq9gNVGExMmrZDpdzgj83GYsZisvBI/edit?ts=5d6f0952#heading=h.xptqrfst9mp)。
+RocksDB 是一个单机存储引擎，存放 TiKV 所有数据，提供单机存储的 KV API。[详情参见](https://github.com/pingcap/presentations/blob/master/hackathon-2019/reference-document-of-hackathon-2019.md#%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E-lsm-tree--rocksdb)。
 
-Raft 是一种一致性算法，在 TiKV 中代表了一致性层，使各个 TiKV 之间的状态能达成一致。负责 TiKV 副本之间的拷贝，是 TiDB 高可用的基石。[详情参见](https://docs.google.com/document/d/1pnmuX8LNRMyYCIq9gNVGExMmrZDpdzgj83GYsZisvBI/edit?ts=5d6f0952#heading=h.icrxj8syphn0)。
+Raft 是一种一致性算法，在 TiKV 中代表了一致性层，使各个 TiKV 之间的状态能达成一致。负责 TiKV 副本之间的拷贝，是 TiDB 高可用的基石。[详情参见](https://github.com/pingcap/presentations/blob/master/hackathon-2019/reference-document-of-hackathon-2019.md#%E4%B8%80%E8%87%B4%E6%80%A7%E5%8D%8F%E8%AE%AE-raft)。
 
 RaftKV 在 RocksDB 和 Raft 之上，结合两者，提供了分布式强一致性的基础 KV API。
 
@@ -160,7 +160,7 @@ TiDB 要访问某个 region 的数据时，需要先向 PD 查询此 region 的�
 
 ### 一致性协议 (Raft)
 
-“一致性”是分布式系统要解决的核心课题之一。从 1990 年 paxos 算法的提出开始，基于消息传递的一致性协议成为主流，[Raft](https://ramcloud.stanford.edu/~ongaro/thesis.pdf) 便是其中的一种。Raft 集群中的每个节点都处于以下三种状态：Leader，Follower 和 Candidate。在 Raft 协议的运行过程中，每个节点启动时都会进入 Follower 状态，并通过选举（Leader Election）产生一个新的 Leader。Raft 通过 term 的概念来避免脑裂，即任何一个 term 内，都有且只有一个 Leader。在产生 Leader 之后，对该 Raft 集群的读写请求都会走 Leader，其中，写请求的处理过程称为 Log Replication。Leader 除了会将客户端的写入请求持久化到自己的日志中之外，还会将日志同步给其他副本，也就是自己的 Follower，只有收到过半的确认之后，Leader 才会向客户端确认写入完成。之后，Raft 会将日志中的修改应用到自己的状态机中，这一步称为 Apply。这个机制同样适用于修改 Raft 集群本身的配置，比如添加节点、删除节点等。对于读请求，经典的 Raft 的实现与对写入请求的处理是完全相同的，但是可以有一些优化，例如 read index 和 read lease 等。
+“一致性”是分布式系统要解决的核心课题之一。从 1990 年 paxos 算法的提出开始，基于消息传递的一致性协议成为主流，[Raft](https://raft.github.io/raft.pdf) 便是其中的一种。Raft 集群中的每个节点都处于以下三种状态：Leader，Follower 和 Candidate。在 Raft 协议的运行过程中，每个节点启动时都会进入 Follower 状态，并通过选举（Leader Election）产生一个新的 Leader。Raft 通过 term 的概念来避免脑裂，即任何一个 term 内，都有且只有一个 Leader。在产生 Leader 之后，对该 Raft 集群的读写请求都会走 Leader，其中，写请求的处理过程称为 Log Replication。Leader 除了会将客户端的写入请求持久化到自己的日志中之外，还会将日志同步给其他副本，也就是自己的 Follower，只有收到过半的确认之后，Leader 才会向客户端确认写入完成。之后，Raft 会将日志中的修改应用到自己的状态机中，这一步称为 Apply。这个机制同样适用于修改 Raft 集群本身的配置，比如添加节点、删除节点等。对于读请求，经典的 Raft 的实现与对写入请求的处理是完全相同的，但是可以有一些优化，例如 read index 和 read lease 等。
 
 TiKV 使用 Raft 协议在 Rocksdb 的基础上再封装了一个 KV 引擎，通过这个引擎，对 TiKV 的写入便能够同步到多个副本上了，这样即使部分节点失败，集群仍然是可用的，并且数据仍然是一致的。
 
