@@ -2,7 +2,7 @@
 
 Paper reading 是 PingCAP 的线上活动之一。在这里我们会带领大家一起阅读数据库领域经典的论文，欢迎大家参与到线上直播与我们一起讨论。
 
-Paper reading 固定直播链接：http://live.bilibili.com/4630260
+Paper reading 固定直播链接： https://zoom.us/j/98087671270
 
 
 Paper reading [日历](https://calendar.google.com/calendar/embed?src=community%40pingcap.com&ctz=Asia%2FShanghai)
